@@ -22,6 +22,7 @@ export class AppComponent {
   }
 
   ngOnInit() {
-      this.rowData = this.http.get('http://10.1.4.65:3000/press/?TagName=Press1600.ZoneIn.Temperature&Period=10');
+    this.rowData = this.http.get('http://10.1.4.65:3000/press/?TagName=Press1600.ZoneIn.Temperature&Period=10');
+    console.log(this.rowData);
   }
 }
