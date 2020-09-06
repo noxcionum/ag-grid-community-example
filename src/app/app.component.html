@@ -2,10 +2,16 @@
 
 <ag-grid-angular
     #agGrid
-    style="width: 500px; height: 500px;"
+    style=" height: 500px;"
     class="ag-theme-alpine"
     [rowData]="rowData"
     [columnDefs]="columnDefs"
     rowSelection="multiple"
+
+    id="myGrid"
+    [defaultColDef]="defaultColDef"
+    [pinnedTopRowData]="pinnedTopRowData"
+    [pinnedBottomRowData]="pinnedBottomRowData"
+    
     >
 </ag-grid-angular>
